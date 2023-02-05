@@ -6,9 +6,14 @@ const Card = ({
 	glareEnable = false,
 	glareMaxOpacity = 0.7,
 	glareColor = "#ffffff",
+	clickEffect = false,
 }) => {
 	return (
-		<div className="inline-block w-64 m-4 text-center transition duration-200 rounded-lg active:scale-90 ">
+		<div
+			className={`inline-block w-full h-full  text-center transition duration-200 rounded-lg ${
+				clickEffect ? "active:scale-90" : ""
+			} `}
+		>
 			<Tilt
 				tiltEnable={tiltEnable}
 				tiltAngleXInitial="0"
@@ -19,7 +24,7 @@ const Card = ({
 				glareMaxOpacity={glareMaxOpacity}
 				glareColor={glareColor}
 				glarePosition="all"
-				className={"overflow-hidden rounded-lg "}
+				className={"overflow-hidden h-full rounded-lg "}
 			>
 				{children}
 			</Tilt>

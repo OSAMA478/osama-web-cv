@@ -6,16 +6,38 @@ import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { RiMedalLine } from "react-icons/ri";
 import { BsInfoSquare } from "react-icons/bs";
 import { Link, NavLink, Outlet } from "react-router-dom";
+import Card from "../Components/UI/Card";
 
 const SideBar = () => {
 	return (
 		<>
 			<aside
 				id="logo-sidebar"
-				className="z-40 pt-16 w-64 h-[calc(100vh)] transition duration-200 -translate-x-full shadow-lg sm:block sm:translate-x-0 bg-slate-700"
+				className="absolute top-0 left-0 z-40 pt-16 w-64 h-[calc(100vh)] transition duration-200 -translate-x-full shadow-lg md:block md:translate-x-0 bg-slate-800"
 				aria-label="Sidebar"
 			>
-				<div className="h-full p-2 sm:p-4 bg-slate-700">
+				<div className="p-2 md:p-4 text-[#c8c8c8] bg-slate-800 ">
+					<div className="p-2">
+						<Card
+							tiltEnable="true"
+							glareEnable="true"
+							glareMaxOpacity={0.4}
+							glareColor="#ffffff"
+						>
+							<div className="flex flex-col items-center h-full p-2 bg-slate-600">
+								<div className="flex justify-center w-20 h-20 rounded-full bg-slate-400">
+									{/* <img
+										src={require("../Assets/img/face.png")}
+										alt="profile pic"
+										className="h-20 p-2"
+									/> */}
+								</div>
+								<h2 className="text-2xl ">Osama Shaikh</h2>
+								<p className="text-sm">Frontend Developer</p>
+								<p className="text-xs "># Learner # Open to Work</p>
+							</div>
+						</Card>
+					</div>
 					<ul className="space-y-2 ">
 						<li>
 							<NavLink
@@ -83,7 +105,8 @@ const SideBar = () => {
 					</ul>
 				</div>
 			</aside>
-			<div className="col-start-1 col-end-3 row-start-1 row-end-2 pt-16 sm:col-end-3 sm:col-start-2 justify-self-center">
+			<div className="w-64"></div>
+			<div className="col-start-1 col-end-3 row-start-1 row-end-2 pt-16 md:col-end-3 md:col-start-2 justify-self-center">
 				<Outlet />
 			</div>
 		</>
