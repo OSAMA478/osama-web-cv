@@ -34,7 +34,10 @@ const SideBar = () => {
 								</div>
 								<h2 className="text-2xl ">Osama Shaikh</h2>
 								<p className="text-sm">Frontend Developer</p>
-								<p className="text-xs "># Learner # Open to Work</p>
+								<p className="text-xs text-blue-400">
+									{" "}
+									# Learner # Open to Work
+								</p>
 							</div>
 						</Card>
 					</div>
