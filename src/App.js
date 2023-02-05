@@ -10,7 +10,7 @@ import Header from "./Layout/Header";
 
 const App = () => {
 	return (
-		<main className="relative h-screen mx-auto my-0 bg-slate-700 max-w-7xl">
+		<main className="relative min-h-[calc(100vh)] mx-auto my-0 bg-slate-700 max-w-7xl">
 			<Header />
 			<div className="grid grid-cols-[auto_1fr]">
 				<Routes>

@@ -13,10 +13,10 @@ const SideBar = () => {
 		<>
 			<aside
 				id="logo-sidebar"
-				className="absolute top-0 left-0 z-40 pt-16 w-64 h-[calc(100vh)] transition duration-200 -translate-x-full shadow-lg md:block md:translate-x-0 bg-slate-800"
+				className="absolute top-0 left-0 z-40 w-64 min-h-[calc(100vh)] h-full pt-16 transition duration-200 -translate-x-full shadow-lg md:block md:translate-x-0 bg-slate-800"
 				aria-label="Sidebar"
 			>
-				<div className="p-2 md:p-4 text-[#c8c8c8] bg-slate-800 ">
+				<div className="p-2 md:p-4  text-[#c8c8c8] bg-slate-800 ">
 					<div className="p-2">
 						<Card
 							tiltEnable="true"
