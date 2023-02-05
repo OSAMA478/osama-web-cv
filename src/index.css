@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+	background-color: #1e293bec;
+	font-family: "Roboto Slab", serif;
+	font-weight: 300;
+	color: rgb(182, 182, 182);
+}
