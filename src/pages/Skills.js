@@ -16,6 +16,13 @@ import { SiFirebase } from "react-icons/si";
 import { SiVercel } from "react-icons/si";
 
 const Skills = () => {
+	const myStyle = {
+		backgroundImage: `url(${require("../Assets/img/redStripes.png")})`,
+		height: "100vh",
+		fontSize: "50px",
+		// backgroundSize: "cover",
+		// backgroundRepeat: "repeat",
+	};
 	return (
 		<div className="p-2 md:p-4">
 			<Banner />
@@ -31,15 +38,15 @@ const Skills = () => {
 								<AiFillHtml5 className="w-8 h-8" />
 							</div>
 							<div className="w-full h-2 bg-slate-500">
-								<img src="" alt="" />
+								{/* <img src="" alt="" /> */}
 							</div>
 						</div>
 						<div className="flex items-center h-20 gap-20 p-4 rounded-lg justify-evenly md:gap-10 ">
 							<div>
 								<AiFillHtml5 className="w-8 h-8" />
 							</div>
-							<div className="w-full h-2 bg-slate-500">
-								<img src="" alt="" />
+							<div className={`w-full h-2 overflow-hidden bg-slate-500`}>
+								<div style={myStyle} className="w-4/5"></div>
 							</div>
 						</div>
 					</div>

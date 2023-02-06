@@ -7,7 +7,7 @@ import { IoMdDownload } from "react-icons/io";
 
 const Banner = () => {
 	return (
-		<Card>
+		<Card glareEnable="true" glareMaxOpacity={0.2}>
 			<div className="pb-2 bg-slate-800">
 				<img src={require("../Assets/img/banner.jpg")} alt="" />
 				<div className="flex items-center justify-between px-4 -mt-10 md:-mt-16 sm:-mt-12 lg:-mt-20 sm:px-4 ">
