@@ -1,11 +1,18 @@
 import React from "react";
 import Banner from "../Components/Banner";
 import Card from "../Components/UI/Card";
+import { BsPersonSquare } from "react-icons/bs";
 
 const Home = () => {
 	return (
 		<div className="p-2 md:p-4">
 			<Banner />
+			<div className="flex items-center justify-center gap-4 my-4 md:gap-8">
+				<BsPersonSquare className="w-8 h-8 md:h-10 md:w-10" />
+				<h1 className="text-2xl text-center underline md:text-4xl underline-offset-8">
+					Home
+				</h1>
+			</div>
 			<Card>
 				<div className="px-10 bg-slate-800">
 					<h1 className="text-lg font-semibold">

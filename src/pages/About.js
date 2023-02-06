@@ -4,11 +4,18 @@ import { FcCellPhone } from "react-icons/fc";
 import { MdAlternateEmail, MdLocationOn } from "react-icons/md";
 import Banner from "../Components/Banner";
 import Card from "../Components/UI/Card";
+import { BsInfoSquare } from "react-icons/bs";
 
 const About = () => {
 	return (
 		<div className="p-2 md:p-4">
 			<Banner />
+			<div className="flex items-center justify-center gap-4 my-4 md:gap-8">
+				<BsInfoSquare className="w-8 h-8 md:h-10 md:w-10" />
+				<h1 className="text-2xl text-center underline md:text-4xl underline-offset-8">
+					About
+				</h1>
+			</div>
 			<div className="flex flex-col gap-2 p-2 md:grid md:grid-cols-2 md:gap-4 md:p-4 ">
 				<Card>
 					<div className="flex justify-between gap-2 p-2 text-start md:p-4 bg-slate-800 item-center">
