@@ -1,11 +1,19 @@
 import React from "react";
 import Banner from "../Components/Banner";
+import Card from "../Components/UI/Card";
+import { RiMedalLine } from "react-icons/ri";
+import MacWindow from "../Components/UI/MacWindow";
 
 const Testimonals = () => {
 	return (
-		<div className="p-2 md:p-4">
+		<div className="p-2 md:p-4 h-[calc(100vh-4rem)] overflow-scroll">
 			<Banner />
-			Testimonals
+			<div className="flex items-center justify-center gap-4 my-4 md:gap-8">
+				<RiMedalLine className="w-8 h-8 md:h-10 md:w-10" />
+				<h1 className="text-2xl text-center underline md:text-4xl underline-offset-8">
+					Testimonials
+				</h1>
+			</div>
 		</div>
 	);
 };

@@ -8,7 +8,7 @@ import { BsInfoSquare } from "react-icons/bs";
 
 const About = () => {
 	return (
-		<div className="p-2 md:p-4">
+		<div className="p-2 md:p-4 h-[calc(100vh-4rem)] overflow-scroll">
 			<Banner />
 			<div className="flex items-center justify-center gap-4 my-4 md:gap-8">
 				<BsInfoSquare className="w-8 h-8 md:h-10 md:w-10" />

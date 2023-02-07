@@ -12,7 +12,7 @@ const App = () => {
 	return (
 		<main className="relative min-h-[calc(100vh)] mx-auto my-0 bg-slate-700 max-w-7xl">
 			<Header />
-			<div className="grid grid-cols-[auto_1fr]">
+			<div className="grid grid-cols-[auto_1fr] ">
 				<Routes>
 					<Route path="/" element={<SideBar />}>
 						<Route index element={<Home />} />

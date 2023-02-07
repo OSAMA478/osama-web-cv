@@ -10,7 +10,7 @@ const Card = ({
 }) => {
 	return (
 		<div
-			className={`inline-block w-full h-full  text-center transition duration-200 rounded-lg ${
+			className={`inline-block w-full h-auto  text-center transition duration-200 rounded-lg ${
 				clickEffect ? "active:scale-90" : ""
 			} `}
 		>
