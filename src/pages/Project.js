@@ -12,7 +12,7 @@ const ProjectData = [
 	},
 	{
 		name: "Al-pakeezo website",
-		imgLink: "../Assets/img/Project",
+		imgLink: "../Assets/img/Project/HalalOPakeeza.png",
 		liveLink: "https://halalopakeeza.com/",
 	},
 	{
@@ -105,8 +105,10 @@ const Project = () => {
 								<div className="relative w-full h-48  bg-black hover:-translate-y-[100%] transition duration-300 ease-in-out">
 									<div className="absolute top-0 w-full h-48 bg-slate-700">
 										<img
-											src={require(`../Assets/img/Project/Airbnb.png`)}
-											// src={`${project.imgLink}`}
+											// src={require(`../Assets/img/Project/Airbnb.png`)}
+											// src={`../Assets/img/Project/${this.props.image}`}
+											// src={require(`${project.imgLink}`)}
+											src={require(project.imgLink)}
 											className="w-full h-full"
 											alt="project"
 										/>
@@ -115,7 +117,7 @@ const Project = () => {
 									<div className="absolute grid place-items-center top-[100%] w-full h-48 bg-slate-700">
 										<Link
 											to={project.liveLink}
-											className="flex flex-col items-center justify-center inline-block text-4xl text-white hover:text-green-400"
+											className="flex flex-col items-center justify-center text-4xl text-white hover:text-green-400"
 										>
 											<h1 className="text-2xl">{project.name}</h1>
 											<RiExternalLinkFill />
