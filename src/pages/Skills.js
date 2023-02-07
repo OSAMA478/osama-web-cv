@@ -147,7 +147,7 @@ const skillsData = [
 
 const Skills = () => {
 	const myStyle = {
-		backgroundImage: `url(${require("../Assets/img/redStripes.png")})`,
+		backgroundImage: `url(${require("../Assets/img/UI/redStripes.png")})`,
 		height: "100%",
 		fontSize: "50px",
 		// backgroundSize: "cover",

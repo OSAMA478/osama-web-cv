@@ -9,11 +9,11 @@ const Banner = () => {
 	return (
 		<Card glareEnable="true" glareMaxOpacity={0.2}>
 			<div className="pb-2 bg-slate-800">
-				<img src={require("../Assets/img/banner.jpg")} alt="" />
+				<img src={require("../Assets/img/UI/banner.jpg")} alt="" />
 				<div className="flex items-center justify-between px-4 -mt-10 md:-mt-16 sm:-mt-12 lg:-mt-20 sm:px-4 ">
 					<div className="w-24 h-24 border-[6px] overflow-hidden  rounded-full sm:h-30 sm:w-30 md:w-36 md:h-36 lg:w-44 lg:h-44 bg-[#7DB3E3] justify-self-auto">
 						{/* <img
-							src={require("../Assets/img/profile.png")}
+							src={require("../Assets/img/UIprofile.png")}
 							alt=""
 							className="h-full mx-auto my-0"
 						/> */}

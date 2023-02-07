@@ -27,7 +27,7 @@ const SideBar = () => {
 							<div className="flex flex-col items-center h-full p-2 bg-slate-600">
 								<div className="flex justify-center w-20 h-20 rounded-full bg-slate-400">
 									{/* <img
-										src={require("../Assets/img/face.png")}
+										src={require("../Assets/img/UI/face.png")}
 										alt="profile pic"
 										className="h-20 p-2"
 									/> */}
