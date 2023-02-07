@@ -51,7 +51,7 @@ const SideBar = () => {
 								href="#"
 								className="flex items-center p-2 text-base font-normal text-gray-300 transition duration-100 rounded-lg active:bg-teal-500 dark:text-white hover:bg-slate-500 dark:hover:bg-gray-700"
 							>
-								<BsPersonSquare className="w-4 h-4 sm:w-6 sm:h-6 " />
+								<BsPersonSquare className="w-2 h-2 sm:w-4 sm:h-4 " />
 								<span className="ml-3">Home</span>
 							</NavLink>
 						</li>
@@ -63,7 +63,7 @@ const SideBar = () => {
 								to="/skills"
 								className="flex items-center p-2 text-base font-normal text-gray-300 transition duration-100 rounded-lg active:bg-teal-500 dark:text-white hover:bg-slate-500 dark:hover:bg-gray-700"
 							>
-								<GiSkills className="w-4 h-4 sm:w-6 sm:h-6 " />
+								<GiSkills className="w-2 h-2 sm:w-4 sm:h-4 " />
 								<span className="flex-1 ml-3 whitespace-nowrap">Skills</span>
 							</NavLink>
 						</li>
@@ -75,7 +75,7 @@ const SideBar = () => {
 								to="/project"
 								className="flex items-center p-2 text-base font-normal text-gray-300 transition duration-100 rounded-lg active:bg-teal-500 dark:text-white hover:bg-slate-500 dark:hover:bg-gray-700"
 							>
-								<AiOutlineFundProjectionScreen className="w-4 h-4 sm:w-6 sm:h-6 " />
+								<AiOutlineFundProjectionScreen className="w-2 h-2 sm:w-4 sm:h-4 " />
 								<span className="flex-1 ml-3 whitespace-nowrap">Project</span>
 							</NavLink>
 						</li>
@@ -87,7 +87,7 @@ const SideBar = () => {
 								to="/testimonials"
 								className="flex items-center p-2 text-base font-normal text-gray-300 transition duration-100 rounded-lg active:bg-teal-500 dark:text-white hover:bg-slate-500 dark:hover:bg-gray-700"
 							>
-								<RiMedalLine className="w-4 h-4 sm:w-6 sm:h-6 " />
+								<RiMedalLine className="w-2 h-2 sm:w-4 sm:h-4 " />
 								<span className="flex-1 ml-3 whitespace-nowrap">
 									Testimonials
 								</span>
@@ -101,7 +101,7 @@ const SideBar = () => {
 								to="/about"
 								className="flex items-center p-2 text-base font-normal text-gray-300 transition duration-100 rounded-lg active:bg-teal-500 dark:text-white hover:bg-slate-500 dark:hover:bg-gray-700"
 							>
-								<BsInfoSquare className="w-4 h-4 sm:w-6 sm:h-6 " />
+								<BsInfoSquare className="w-2 h-2 sm:w-4 sm:h-4 " />
 								<span className="flex-1 ml-3 whitespace-nowrap">About</span>
 							</NavLink>
 						</li>

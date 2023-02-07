@@ -4,6 +4,7 @@ import { BsGithub } from "react-icons/bs";
 import { AiFillLinkedin } from "react-icons/ai";
 import { SiDiscord } from "react-icons/si";
 import { IoMdDownload } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
 	return (
@@ -18,21 +19,21 @@ const Banner = () => {
 							className="h-full mx-auto my-0"
 						/> */}
 					</div>
-					<div className="flex self-end justify-end flex-grow gap-2 sm:pt-2 lg:pt-4 sm:self-center md:gap-8">
-						<a href="">
-							<BsGithub className="text-4xl" />
-						</a>
-						<a href="">
-							<AiFillLinkedin className="text-4xl text-[#0a66c2]" />
-						</a>
+					<div className="flex self-end justify-end flex-grow gap-2 md:pb-6 md:gap-8">
+						<Link to="">
+							<BsGithub className="text-2xl md:text-4xl " />
+						</Link>
+						<Link to="">
+							<AiFillLinkedin className="text-2xl md:text-4xl  text-[#0a66c2]" />
+						</Link>
 						{/* </div> */}
 						{/* <div className="flex justify-center gap-2 md:gap-4"> */}
-						<a href="">
-							<SiDiscord className="text-4xl text-[#5865f2]" />
-						</a>
-						<a href="">
-							<IoMdDownload className="text-4xl text-green-400" />
-						</a>
+						<Link to="">
+							<SiDiscord className="text-2xl md:text-4xl  text-[#5865f2]" />
+						</Link>
+						<Link to="">
+							<IoMdDownload className="text-2xl text-green-400 md:text-4xl" />
+						</Link>
 					</div>
 				</div>
 			</div>

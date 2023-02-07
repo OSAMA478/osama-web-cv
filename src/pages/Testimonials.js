@@ -3,6 +3,7 @@ import Banner from "../Components/Banner";
 import Card from "../Components/UI/Card";
 import { RiMedalLine } from "react-icons/ri";
 import MacWindow from "../Components/UI/MacWindow";
+import { Link } from "react-router-dom";
 
 const Testimonals = () => {
 	return (
@@ -13,6 +14,22 @@ const Testimonals = () => {
 				<h1 className="text-2xl text-center underline md:text-4xl underline-offset-8">
 					Testimonials
 				</h1>
+				<div
+					className="badge-base LI-profile-badge"
+					data-locale="en_US"
+					data-size="large"
+					data-theme="dark"
+					data-type="HORIZONTAL"
+					data-vanity="osama-shaikh-790b6a118"
+					data-version="v1"
+				>
+					<Link
+						className="badge-base__link LI-simple-link"
+						href="https://in.linkedin.com/in/osama-shaikh-790b6a118?trk=profile-badge"
+					>
+						Osama Shaikh
+					</Link>
+				</div>
 			</div>
 		</div>
 	);
