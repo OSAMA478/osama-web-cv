@@ -53,7 +53,7 @@ const skillsData = [
 				techName: "typeScript",
 				icon: () => <SiTypescript className={`w-8 h-8 text-[#3178c6]`} />,
 
-				percentForBar: "w-8/12",
+				percentForBar: "w-6/12",
 			},
 		],
 	},

@@ -14,7 +14,7 @@ const Home = () => {
 				</h1>
 			</div>
 			<Card>
-				<div className="px-10 bg-slate-800">
+				<div className="p-8 bg-slate-800">
 					<h1 className="text-lg font-semibold">
 						"🔨Transforming Ideas into Reality: __A Talented Front-end Developer
 						with an Eye for 🎨Aesthetics__"

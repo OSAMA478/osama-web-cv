@@ -13,25 +13,28 @@ const Banner = () => {
 				<img src={require("../Assets/img/UI/banner.jpg")} alt="" />
 				<div className="flex items-center justify-between px-4 -mt-10 md:-mt-16 sm:-mt-12 lg:-mt-20 sm:px-4 ">
 					<div className="w-24 h-24 border-[6px] overflow-hidden  rounded-full sm:h-30 sm:w-30 md:w-36 md:h-36 lg:w-44 lg:h-44 bg-[#7DB3E3] justify-self-auto">
-						{/* <img
-							src={require("../Assets/img/UIprofile.png")}
+						<img
+							src={require("../Assets/img/UI/profile.png")}
 							alt=""
 							className="h-full mx-auto my-0"
-						/> */}
+						/>
 					</div>
 					<div className="flex self-end justify-end flex-grow gap-2 md:pb-6 md:gap-8">
-						<Link to="">
+						<Link to="https://github.com/OSAMA478" target="_blank">
 							<BsGithub className="text-2xl md:text-4xl " />
 						</Link>
-						<Link to="">
+						<Link
+							to="https://www.linkedin.com/in/osama-shaikh-790b6a118/"
+							target="_blank"
+						>
 							<AiFillLinkedin className="text-2xl md:text-4xl  text-[#0a66c2]" />
 						</Link>
 						{/* </div> */}
 						{/* <div className="flex justify-center gap-2 md:gap-4"> */}
-						<Link to="">
+						<Link to="https://discord.gg/6m4EerHdhu" target="_blank">
 							<SiDiscord className="text-2xl md:text-4xl  text-[#5865f2]" />
 						</Link>
-						<Link to="">
+						<Link to="../Assets/pdf/osama-resume.pdf" target="_blank" download>
 							<IoMdDownload className="text-2xl text-green-400 md:text-4xl" />
 						</Link>
 					</div>

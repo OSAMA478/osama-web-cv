@@ -31,7 +31,9 @@ const Header = () => {
 				<Link to="/">
 					<h1 className="sm:text-xl">Osama CV</h1>
 				</Link>
-				<VscFilePdf className="w-6 h-6 sm:w-8 sm:h-8 " />
+				<Link to="../Assets/pdf/osama-resume.pdf" target="_blank" download>
+					<VscFilePdf className="w-6 h-6 sm:w-8 sm:h-8 " />
+				</Link>
 			</div>
 		</nav>
 	);
