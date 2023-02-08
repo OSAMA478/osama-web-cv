@@ -25,7 +25,7 @@ const Testimonals = () => {
 				>
 					<Link
 						className="badge-base__link LI-simple-link"
-						href="https://in.linkedin.com/in/osama-shaikh-790b6a118?trk=profile-badge"
+						to="https://in.linkedin.com/in/osama-shaikh-790b6a118?trk=profile-badge"
 					>
 						Osama Shaikh
 					</Link>

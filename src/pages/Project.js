@@ -104,11 +104,12 @@ const Project = () => {
 							<Card glareEnable="true" tiltEnable="true" glareMaxOpacity={0.4}>
 								<div className="relative w-full h-48  bg-black hover:-translate-y-[100%] transition duration-300 ease-in-out">
 									<div className="absolute top-0 w-full h-48 bg-slate-700">
+										{/* <Image src={project.imgLink} /> */}
 										<img
-											// src={require(`../Assets/img/Project/Airbnb.png`)}
+											src={`../Assets/img/Project/Airbnb.png`}
 											// src={`../Assets/img/Project/${this.props.image}`}
 											// src={require(`${project.imgLink}`)}
-											src={require(project.imgLink)}
+											// src={require(project.imgLink).default}
 											className="w-full h-full"
 											alt="project"
 										/>
