@@ -7,83 +7,83 @@ import { Link } from "react-router-dom";
 const ProjectData = [
 	{
 		name: "Airbnb clone",
-		imgLink: "../Assets/img/Project/Airbnb.png",
+		imgName: "Airbnb",
 		liveLink: "https://10-react-airbnb-clone.vercel.app/",
 	},
 	{
 		name: "Al-pakeezo website",
-		imgLink: "../Assets/img/Project/HalalOPakeeza.png",
+		imgName: "HalalOPakeeza",
 		liveLink: "https://halalopakeeza.com/",
 	},
 	{
 		name: "Food Order App",
-		imgLink: "../Assets/img/Project/FoodOrderApp.png",
+		imgName: "FoodOrderApp",
 		liveLink: "https://food-order-app.osama478.vercel.app/",
 	},
 	{
 		name: "Expense Tracker",
-		imgLink: "../Assets/img/Project/ExpenseTracker.png",
+		imgName: "ExpenseTracker",
 		liveLink: "https://06-react-expense-tracker.vercel.app/",
 	},
 	{
 		name: "Counter App",
-		imgLink: "../Assets/img/Project/CounterApp.png",
+		imgName: "CounterApp",
 		liveLink: "https://07-react-redux-counter-app.vercel.app/",
 	},
 	{
 		name: "Shopping Cart",
-		imgLink: "../Assets/img/Project/ShopingCart.png",
+		imgName: "ShopingCart",
 		liveLink: "https://08-react-shopping-cart-app.vercel.app/",
 	},
 	{
 		name: "Rick and Morty",
-		imgLink: "../Assets/img/Project/RickAndMorty.png",
+		imgName: "RickAndMorty",
 		liveLink: "https://11-react-rick-morty-all-character.vercel.app/",
 	},
 	{
 		name: "Analog Clock",
-		imgLink: "../Assets/img/Project/Clock.png",
+		imgName: "Clock",
 		liveLink: "https://osama478.github.io/18-JS-clock/",
 	},
 	{
 		name: "Stopwatch",
-		imgLink: "../Assets/img/Project/Stopwatch.png",
+		imgName: "Stopwatch",
 		liveLink: "https://osama478.github.io/20-JS-stopwatch/",
 	},
 	{
 		name: "Word Clock",
-		imgLink: "../Assets/img/Project/WordClock.png",
+		imgName: "WordClock",
 		liveLink: "https://osama478.github.io/19-JS-word-clock/",
 	},
 
 	{
 		name: "Music Animation",
-		imgLink: "../Assets/img/Project/MusicAnimation.png",
+		imgName: "MusicAnimation",
 		liveLink: "https://osama478.github.io/02-css-music-animation/",
 	},
 	{
 		name: "Notebook",
-		imgLink: "../Assets/img/Project/Notes.png",
+		imgName: "Notes",
 		liveLink: "https://osama478.github.io/01-css-notes-project/",
 	},
 	{
 		name: "Clock Animation",
-		imgLink: "../Assets/img/Project/ClockAnimation.png",
+		imgName: "ClockAnimation",
 		liveLink: "https://osama478.github.io/04-css-clock-animation/",
 	},
 	{
 		name: "Grid Layout",
-		imgLink: "../Assets/img/Project/GridLayout.png",
+		imgName: "GridLayout",
 		liveLink: "https://osama478.github.io/07-css-grid-layout3-resposive/",
 	},
 	{
 		name: "Parallax",
-		imgLink: "../Assets/img/Project/parallex.png",
+		imgName: "parallex",
 		liveLink: "https://osama478.github.io/12-css-prallex/",
 	},
 	{
 		name: "Product Card",
-		imgLink: "../Assets/img/Project/ProducCard.png",
+		imgName: "ProducCard",
 		liveLink: "https://osama478.github.io/08-css-creative-product-card/",
 	},
 ];
@@ -98,18 +98,15 @@ const Project = () => {
 				</h1>
 			</div>
 			<Card>
-				<div className="grid grid-cols-1 gap-2 p-4 md:gap-4 md:p-10 place-items-center md:grid-cols-2 bg-slate-800 ">
-					{ProjectData.map((project, i) => (
-						<div className="w-full h-full " key={`${i}`}>
+				<div className="grid grid-cols-1 gap-6 p-4 lg:gap-10 lg:p-10 place-items-center lg:grid-cols-2 bg-slate-800 ">
+					{ProjectData.map((project) => (
+						<div className="h-full w-80 lg:w-full " key={`${project.name}`}>
 							<Card glareEnable="true" tiltEnable="true" glareMaxOpacity={0.4}>
 								<div className="relative w-full h-48  bg-black hover:-translate-y-[100%] transition duration-300 ease-in-out">
 									<div className="absolute top-0 w-full h-48 bg-slate-700">
 										{/* <Image src={project.imgLink} /> */}
 										<img
-											src={`../Assets/img/Project/Airbnb.png`}
-											// src={`../Assets/img/Project/${this.props.image}`}
-											// src={require(`${project.imgLink}`)}
-											// src={require(project.imgLink).default}
+											src={require(`../Assets/img/Project/${project.imgName}.png`)}
 											className="w-full h-full"
 											alt="project"
 										/>
@@ -118,6 +115,7 @@ const Project = () => {
 									<div className="absolute grid place-items-center top-[100%] w-full h-48 bg-slate-700">
 										<Link
 											to={project.liveLink}
+											target="_blank"
 											className="flex flex-col items-center justify-center text-4xl text-white hover:text-green-400"
 										>
 											<h1 className="text-2xl">{project.name}</h1>
