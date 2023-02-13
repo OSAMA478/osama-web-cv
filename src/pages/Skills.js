@@ -21,6 +21,7 @@ import { TbBrandNextjs, TbTools } from "react-icons/tb";
 import { BsGithub } from "react-icons/bs";
 import { BiGitBranch } from "react-icons/bi";
 import { RxNotionLogo } from "react-icons/rx";
+import { Link } from "react-router-dom";
 
 const skillsData = [
 	{
@@ -192,6 +193,23 @@ const Skills = () => {
 					</div>
 				</MacWindow>
 			))}
+			<div className="flex justify-between max-w-lg mx-auto">
+				<Link to="/">
+					<button className="p-2 mt-2 rounded-md md:px-4 bg-slate-800 md:mt-4">
+						👆 prev Page
+					</button>
+				</Link>
+				<Link to="/">
+					<button className="p-2 mt-2 rounded-md md:px-4 bg-slate-800 md:mt-4">
+						👆 home
+					</button>
+				</Link>
+				<Link to="/project">
+					<button className="p-2 mt-2 rounded-md md:px-4 bg-slate-800 md:mt-4 ">
+						👆 next Page
+					</button>
+				</Link>
+			</div>
 		</div>
 	);
 };

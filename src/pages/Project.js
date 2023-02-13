@@ -128,6 +128,26 @@ const Project = () => {
 					))}
 				</div>
 			</Card>
+			<div className="flex justify-between max-w-lg mx-auto">
+				<Link to="/skills">
+					<button className="p-2 mt-2 rounded-md md:px-4 bg-slate-800 md:mt-4">
+						👆 prev Page
+					</button>
+				</Link>
+				<Link to="/">
+					<button className="p-2 mt-2 rounded-md md:px-4 bg-slate-800 md:mt-4">
+						👆 home
+					</button>
+				</Link>
+				<Link to="/project">
+					<button
+						disabled
+						className="p-2 mt-2 rounded-md md:px-4 bg-slate-800 md:mt-4 hover:cursor-not-allowed opacity-60"
+					>
+						👆 next Page
+					</button>
+				</Link>
+			</div>
 		</div>
 	);
 };

@@ -1,7 +1,5 @@
 import SideBar from "./Layout/SideBar";
 import Project from "./pages/Project";
-import Testimonials from "./pages/Testimonials";
-import About from "./pages/About";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Skills from "./pages/Skills";
@@ -18,8 +16,6 @@ const App = () => {
 						<Route index element={<Home />} />
 						<Route path="project" element={<Project />} />
 						<Route path="skills" element={<Skills />} />
-						<Route path="testimonials" element={<Testimonials />} />
-						<Route path="about" element={<About />} />
 						<Route path="*" element={<NoPage />} />
 					</Route>
 				</Routes>
