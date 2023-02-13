@@ -31,7 +31,11 @@ const Header = () => {
 				<Link to="/">
 					<h1 className="sm:text-xl">Osama CV</h1>
 				</Link>
-				<Link to="../Assets/pdf/osama-resume.pdf" target="_blank" download>
+				<Link
+					to="https://drive.google.com/file/d/1kJt50OqJouvcd3pL_9WYH3cLCnm507zK/view?usp=sharing"
+					target="_blank"
+					download
+				>
 					<VscFilePdf className="w-6 h-6 sm:w-8 sm:h-8 " />
 				</Link>
 			</div>
