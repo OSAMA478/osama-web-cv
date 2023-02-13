@@ -88,7 +88,7 @@ const Home = () => {
 						👆 home
 					</button>
 				</Link>
-				<Link to="/project">
+				<Link to="/skills">
 					<button className="p-2 mt-2 rounded-md md:px-4 bg-slate-800 md:mt-4">
 						👆 next Page
 					</button>

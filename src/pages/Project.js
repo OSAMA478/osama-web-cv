@@ -139,7 +139,7 @@ const Project = () => {
 						👆 home
 					</button>
 				</Link>
-				<Link to="/project">
+				<Link to="/">
 					<button
 						disabled
 						className="p-2 mt-2 rounded-md md:px-4 bg-slate-800 md:mt-4 hover:cursor-not-allowed opacity-60"
