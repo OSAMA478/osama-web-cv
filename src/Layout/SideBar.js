@@ -1,11 +1,11 @@
 import React from "react";
-import { VscFilePdf } from "react-icons/vsc";
+// import { VscFilePdf } from "react-icons/vsc";
 import { BsPersonSquare } from "react-icons/bs";
 import { GiSkills } from "react-icons/gi";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
-import { RiMedalLine } from "react-icons/ri";
-import { BsInfoSquare } from "react-icons/bs";
-import { Link, NavLink, Outlet } from "react-router-dom";
+// import { RiMedalLine } from "react-icons/ri";
+// import { BsInfoSquare } from "react-icons/bs";
+import { NavLink, Outlet } from "react-router-dom";
 import Card from "../Components/UI/Card";
 
 const SideBar = () => {
@@ -25,11 +25,11 @@ const SideBar = () => {
 							glareColor="#ffffff"
 						>
 							<div className="flex flex-col items-center h-full p-2 bg-slate-600">
-								<div className="flex justify-center w-20 h-20 rounded-full bg-slate-400">
+								<div className="flex justify-center w-20 h-20 overflow-hidden rounded-full bg-slate-400">
 									<img
-										src={require("../Assets/img/UI/face.png")}
+										src={require("../Assets/img/UI/WhatsApp-avtar.jpeg")}
 										alt="profile pic"
-										className="h-20 p-2"
+										className="h-20 p-2 scale-125"
 									/>
 								</div>
 								<h2 className="text-2xl ">Osama Shaikh</h2>
