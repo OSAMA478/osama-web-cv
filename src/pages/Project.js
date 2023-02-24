@@ -6,14 +6,19 @@ import Card from "../Components/UI/Card";
 import { Link } from "react-router-dom";
 const ProjectData = [
 	{
-		name: "Airbnb clone",
-		imgName: "Airbnb",
-		liveLink: "https://10-react-airbnb-clone.vercel.app/",
-	},
-	{
-		name: "Al-pakeezo website",
+		name: "Al-pakeezo Website",
 		imgName: "HalalOPakeeza",
 		liveLink: "https://halalopakeeza.com/",
+	},
+	{
+		name: "YouTube Clone",
+		imgName: "yt-clone",
+		liveLink: "https://13-react-yt-clone.vercel.app/",
+	},
+	{
+		name: "Airbnb Clone",
+		imgName: "Airbnb",
+		liveLink: "https://10-react-airbnb-clone.vercel.app/",
 	},
 	{
 		name: "Food Order App",
